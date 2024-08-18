@@ -14,6 +14,8 @@
 
 ## Canlı Demo
 
+https://twitter-clone-nu-sand.vercel.app
+
 ## Screen Gif
 
 <img src="screen.gif" />
