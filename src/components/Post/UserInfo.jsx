@@ -1,4 +1,3 @@
-import React from "react";
 import moment from "moment";
 import "moment/locale/tr";
 import { MdEdit } from "react-icons/md";
@@ -15,11 +14,9 @@ const UserInfo = ({ tweet }) => {
     <div className="flex gap-3 items-center whitespace-nowrap">
       <p>{tweet.user.name}</p>
 
-      {username ? (
-        <p className="text-gray-400 text-sm">@{username}</p>
-      ) : (
-        <p className="text-gray-400 text-sm">@misafir</p>
-      )}
+      <p className="text-gray-400 text-sm">
+        @{tweet.user.name?.toLowerCase().split(" ").join("_")}
+      </p>
 
       <p className="text-gray-400 text-sm">{date}</p>
 
